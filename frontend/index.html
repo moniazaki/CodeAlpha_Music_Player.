@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/vendors/fonts/all.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Bootstrap Css  -->
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container  col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div class="col-10 d-flex justify-content-between ms-3 me-3">
+                    <button class=" btn btn-light ">
+                        <i class="fa-solid fa-backward-step" style="color: #1b1f3b;"></i>
+                    </button>
+                    <button class=" btn btn-light ">
+                        <i class="fa-solid fa-bars" style="color: #1b1f3b;"></i>
+                    </button>
+                </div>
+                <div>
+                    <img src="./assets/imgs/adele.png" alt="adele cover pic" class="img-fluid img">
+                </div>
+                <p class="fw-bold mt-2 ">Rolling in the Deep</p>
+                <p class="fw-lightmb-2 ">Song by Adele</p>
+                <div class="audio-player">
+
+                    <audio controls>
+                        <source src="./assets/audios/Someone Like You - Adele (Lyrics) 🎵.mp4" type="audio/mp4">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <input type="range" value="0"  id="range">
+                </div>
+                <div class="controls col-12 mt-5 mb-5">
+                    <button class=" btn btn-light me-5">
+                        <i class="fa-solid fa-backward" style="color: #1b1f3b;"></i>
+                    </button>
+                    <button class="play btn btn-light me-5 ">
+                        <i class="fa-solid fa-play" style="color: white;"></i>
+                    </button>
+                    <button class=" btn btn-light ">
+                        <i class="fa-solid fa-forward"  style="color: #1b1f3b;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- js -->
+    <script src="./assets/js/main.js"></script>
+    <!-- Bootstrap js -->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
